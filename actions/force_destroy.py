@@ -9,8 +9,8 @@ __all__ = [
 
 class ForceStopVM(Action):
 
-    def run(self, acs_url, apikey, secretkey, vm_id):
-        cs = CloudStack(endpoint=acs_url,
+    def run(self, url, apikey, secretkey, vm_id):
+        cs = CloudStack(endpoint=url,
                 key=apikey,
                 secret=secretkey)
 

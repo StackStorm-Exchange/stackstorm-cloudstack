@@ -5,16 +5,16 @@ description: Force destroy a ACS VM.
 enabled: true
 entry_point: force_destroy.py
 parameters:
-  acs_url:
+  url:
     type: string
     description: URL to use at ACS request
     required: true
-  acs_apikey:
+  apikey:
     type: string
     description: API KEY to use at ACS request
     required: true
     secret: true
-  acs_secretkey:
+  secretkey:
     type: string
     description: Secret KEY to use at ACS request
     required: true
