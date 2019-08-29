@@ -14,4 +14,4 @@ class ForceStopVM(Action):
                 key=apikey,
                 secret=secretkey)
 
-        return True, cs.stopVirtualMachine(id = vm_id, forced = True)
+        return cs.stopVirtualMachine(id = vm_id, forced = True)
