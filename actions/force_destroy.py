@@ -12,6 +12,7 @@ class ForceStopVM(Action):
     def run(self, url, apikey, secretkey, vm_id):
         cs = CloudStack(endpoint=url,
                 key=apikey,
-                secret=secretkey)
+                secret=secretkey,
+                verify=False)
 
         return cs.stopVirtualMachine(id = vm_id, forced = True)
