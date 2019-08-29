@@ -8,9 +8,13 @@ __all__ = [
 ]
 
 class ForceStopVM(Action):
+    def __init__(self, config):
+        super(ForceStopVM, self).__init__(config=config)
 
     def run(self, url, apikey, secretkey, vm_id):
-        cs = CloudStack(endpoint=url,
+        url_temp = self.config.get('url') if url == "" else url
+
+        cs = CloudStack(endpoint=url_temp,
                 key=apikey,
                 secret=secretkey,
                 dangerous_no_tls_verify=True,
