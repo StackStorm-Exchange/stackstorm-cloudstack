@@ -16,4 +16,7 @@ class ForceStopVM(Action):
                 dangerous_no_tls_verify=True,
                 fetch_result=True)
 
-        return cs.stopVirtualMachine(id = vm_id, forced = True)
+        if cs.stopVirtualMachine(id = vm_id, forced = True):
+            return cs.destroyVirtualMachine(id = vm_id)
+
+        return False
