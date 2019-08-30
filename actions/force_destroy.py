@@ -12,7 +12,10 @@ class ForceStopVM(Action):
         super(ForceStopVM, self).__init__(config=config)
 
     def run(self, url, apikey, secretkey, vm_id):
-        url_temp = self.config.get('url') if url == "" else url
+        url_temp = self.config.get('url')
+
+        if (url != "" and url != None):
+            url_temp = url
 
         cs = CloudStack(endpoint=url_temp,
                 key=apikey,
