@@ -5,6 +5,9 @@ description: CloudStack integration
 keywords:
     - acs
     - cloudstack
+    - apache-cloudstack
+    - apache-acs
+    - cloud
 version: 0.1.0
 python_versions:
   - "2"
