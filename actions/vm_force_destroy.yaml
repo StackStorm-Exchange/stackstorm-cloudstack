@@ -1,9 +1,9 @@
 ---
-name: force_destroy
+name: vm_force_destroy
 runner_type: python-script
-description: Force destroy a ACS VM.
+description: Force destroy a ACS VM. API command stopVirtualMachine and destroyVirtualMachine
 enabled: true
-entry_point: force_destroy.py
+entry_point: vm_force_destroy.py
 parameters:
   url:
     type: string
