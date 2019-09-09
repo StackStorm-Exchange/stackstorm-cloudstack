@@ -1,0 +1,53 @@
+---
+name: vm_deploy
+runner_type: python-script
+description: Creates and automatically starts a virtual machine based on a service offering, disk offering, and template. API command deployVirtualMachine
+enabled: true
+entry_point: vm_deploy.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  name:
+    type: string
+    description: Host name for the virtual machine.
+    required: false
+  projectid:
+    type: string
+    description: Deploy vm for the project.
+    required: true
+  zoneid:
+    type: string
+    description: Availability zone for the virtual machine.
+    required: true
+  templateid:
+    type: string
+    description: The ID of the template for the virtual machine.
+    required: true
+  serviceofferingid:
+    type: string
+    description: The ID of the service offering for the virtual machine.
+    required: true
+  networkids:
+    type: array
+    description: List of network ids used by virtual machine.
+    required: true
+  hypervisor:
+    type: string
+    description: The hypervisor on which to deploy the virtual machine.
+    required: false
+    default: XenServer
+  userdata:
+    type: string
+    description: Binary data that can be sent to the virtual machine upon a successful deployment.
