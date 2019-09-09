@@ -9,7 +9,8 @@ __all__ = [
 
 class VMDeploy(CloudStackAPI):
     def run(self,
-            url, apikey, secretkey, name, project_id, zone_id, template_id, service_offering_id, hyper_visor, userdata):
+            url, apikey, secretkey, name, project_id, zone_id,
+            template_id, service_offering_id, hyper_visor, userdata):
         cs = self.get_client(url, apikey, secretkey)
 
         return cs.deployVirtualMachine(
