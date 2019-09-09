@@ -1,0 +1,70 @@
+---
+name: network_create_globo
+runner_type: python-script
+description: Adds a vlan/network in Cloudstack and GloboNetwork. API command addNetworkViaGloboNetwork
+enabled: true
+entry_point: network_create_globo.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  zoneid:
+    type: string
+    description: The Zone ID for the network.
+    required: true
+  networkofferingid:
+    type: string
+    description: The network offering id.
+    required: true
+  napienvironmentid:
+    type: string
+    description: GloboNetwork environment ID.
+    required: true
+  name:
+    type: string
+    description: The name of the network.
+    required: true
+  displaytext:
+    type: string
+    description: The display text of the network.
+    required: true
+  isipv6:
+    type: boolean
+    description: If true defines de network IP type as IPV6.
+    required: true
+  projectid:
+    type: string
+    description: An optional project for the ssh key.
+    required: true
+  subnet:
+    type: integer
+    description: Subnet mask in bits.
+    required: false
+      enum:
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+      immutable: true
+      default: 27
+  acltype:
+    type: string
+    description: Access control type; supported values are account and domain.
+    required: false
+    enum:
+      - account
+      - domain
+    immutable: true
+    default: account

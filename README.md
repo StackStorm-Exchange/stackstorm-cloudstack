@@ -33,3 +33,10 @@ url: http://localhost:8080/client/api
 
 * `project_create` - create a Project
 * `delete_create` - delete a Project
+
+#### Network
+
+* `network_create_globo` - create a Network GloboNetwork
+* `network_delete_globo` - delete a Network GloboNetwork
+* `network_restart` - restart a Network
+* `network_update` - update a Network

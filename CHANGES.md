@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.5.0
+
+- Add Network create Globo command
+- Add Network delete Globo command
+- Add Network restart command
+- Add Network update command
+
 ## 0.4.0
 
 - Add Project create command

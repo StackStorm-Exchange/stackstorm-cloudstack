@@ -1,0 +1,25 @@
+---
+name: network_delete_globo
+runner_type: python-script
+description: Deletes a GloboNetwork network. API command deleteNetworkInGloboNetwork
+enabled: true
+entry_point: network_delete_globo.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  network_id:
+    type: string
+    description: The ID of the network.
+    required: true
