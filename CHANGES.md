@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.2
+
+- Fix enum at network_create_globo.yaml
+
 ## 0.5.1
 
 - Fix missing returns

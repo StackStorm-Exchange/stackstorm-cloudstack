@@ -51,14 +51,14 @@ parameters:
     type: integer
     description: Subnet mask in bits.
     required: false
-      enum:
-        - 24
-        - 25
-        - 26
-        - 27
-        - 28
-      immutable: true
-      default: 27
+    enum:
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+    immutable: true
+    default: 27
   acltype:
     type: string
     description: Access control type; supported values are account and domain.
