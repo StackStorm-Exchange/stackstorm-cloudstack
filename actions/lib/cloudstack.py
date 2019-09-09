@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from st2common.runners.base_action import Action
 from cs import CloudStack
+from st2common.runners.base_action import Action
 
 __all__ = [
     'CloudStackAPI'
