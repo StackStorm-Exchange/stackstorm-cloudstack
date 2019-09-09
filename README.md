@@ -21,3 +21,10 @@ url: http://localhost:8080/client/api
 #### LoadBalancer
 
 * `lb_list_members` - list members from a LoadBalancer
+
+#### SSH KeyPair
+
+* `sshkeypair_create` - create a SSH KeyPair
+* `sshkeypair_delete` - delete a SSH KeyPair
+* `sshkeypair_list` - list a SSH KeyPair
+* `sshkeypair_register` - register a SSH KeyPair

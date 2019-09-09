@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.3.0
+
+- Add SSHKeyPair create command
+- Add SSHKeyPair delete command
+- Add SSHKeyPair list command
+- Add SSHKeyPair register command
+
 ## 0.2.0
 
 - Add VM destroy command
