@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.4.0
+
+- Add Project create command
+- Add Project delete command
+
 ## 0.3.0
 
 - Add SSHKeyPair create command

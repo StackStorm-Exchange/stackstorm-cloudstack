@@ -28,3 +28,8 @@ url: http://localhost:8080/client/api
 * `sshkeypair_delete` - delete a SSH KeyPair
 * `sshkeypair_list` - list a SSH KeyPair
 * `sshkeypair_register` - register a SSH KeyPair
+
+#### Project
+
+* `project_create` - create a Project
+* `delete_create` - delete a Project
