@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.1
+
+- Fix missing returns
+
 ## 0.5.0
 
 - Add Network create Globo command

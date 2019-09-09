@@ -11,4 +11,4 @@ class VMStop(CloudStackAPI):
     def run(self, url, apikey, secretkey, vm_id, forced):
         cs = self.get_client(url, apikey, secretkey)
 
-        cs.stopVirtualMachine(id=vm_id, forced=forced)
+        return cs.stopVirtualMachine(id=vm_id, forced=forced)

@@ -11,4 +11,4 @@ class SSHKeyPairCreate(CloudStackAPI):
     def run(self, url, apikey, secretkey, name, project_id):
         cs = self.get_client(url, apikey, secretkey)
 
-        cs.createSSHKeyPair(name=name, projectid=project_id)
+        return cs.createSSHKeyPair(name=name, projectid=project_id)

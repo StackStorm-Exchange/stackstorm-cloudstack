@@ -11,4 +11,4 @@ class VMStart(CloudStackAPI):
     def run(self, url, apikey, secretkey, vm_id):
         cs = self.get_client(url, apikey, secretkey)
 
-        cs.startVirtualMachine(id=vm_id)
+        return cs.startVirtualMachine(id=vm_id)
