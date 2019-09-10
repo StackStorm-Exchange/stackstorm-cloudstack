@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.4
+
+- Fix unused variable at vm deploy action
+
 ## 0.5.3
 
 - Fix variables name
