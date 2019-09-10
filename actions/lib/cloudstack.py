@@ -22,5 +22,6 @@ class CloudStackAPI(Action):
                         key=apikey,
                         secret=secretkey,
                         dangerous_no_tls_verify=True,
-                        fetch_result=True)
+                        fetch_result=True,
+                        method='POST')
         return cs

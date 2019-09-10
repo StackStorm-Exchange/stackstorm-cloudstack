@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.5
+
+- Using POST method at CloudStack client
+
 ## 0.5.4
 
 - Fix unused variable at vm deploy action
