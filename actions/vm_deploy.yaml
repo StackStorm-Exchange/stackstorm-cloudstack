@@ -23,27 +23,27 @@ parameters:
     type: string
     description: Host name for the virtual machine.
     required: false
-  projectid:
+  project_id:
     type: string
     description: Deploy vm for the project.
     required: true
-  zoneid:
+  zone_id:
     type: string
     description: Availability zone for the virtual machine.
     required: true
-  templateid:
+  template_id:
     type: string
     description: The ID of the template for the virtual machine.
     required: true
-  serviceofferingid:
+  service_offering_id:
     type: string
     description: The ID of the service offering for the virtual machine.
     required: true
-  networkids:
+  network_ids:
     type: array
     description: List of network ids used by virtual machine.
     required: true
-  hypervisor:
+  hyper_visor:
     type: string
     description: The hypervisor on which to deploy the virtual machine.
     required: false

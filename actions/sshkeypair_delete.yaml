@@ -23,7 +23,7 @@ parameters:
     type: string
     description: Name of the keypair.
     required: true
-  projectid:
+  project_id:
     type: string
     description: The project associated with keypair.
     required: false

@@ -23,7 +23,7 @@ parameters:
     type: string
     description: Name of the project.
     required: true
-  displaytext:
+  display_text:
     type: string
     description: Display text of the project.
     required: true

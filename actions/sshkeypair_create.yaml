@@ -23,7 +23,7 @@ parameters:
     type: string
     description: Name of the keypair.
     required: true
-  projectid:
+  project_id:
     type: string
     description: An optional project for the ssh key.
     required: false

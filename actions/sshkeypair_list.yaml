@@ -23,7 +23,7 @@ parameters:
     type: string
     description: A key pair name to look for.
     required: false
-  projectid:
+  project_id:
     type: string
     description: List objects by project.
     required: false

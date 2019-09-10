@@ -19,15 +19,15 @@ parameters:
     description: Secret KEY to use at ACS request
     required: true
     secret: true
-  zoneid:
+  zone_id:
     type: string
     description: The Zone ID for the network.
     required: true
-  networkofferingid:
+  network_offering_id:
     type: string
     description: The network offering id.
     required: true
-  napienvironmentid:
+  napi_environment_id:
     type: string
     description: GloboNetwork environment ID.
     required: true
@@ -35,15 +35,15 @@ parameters:
     type: string
     description: The name of the network.
     required: true
-  displaytext:
+  display_text:
     type: string
     description: The display text of the network.
     required: true
-  isipv6:
+  is_ipv6:
     type: boolean
     description: If true defines de network IP type as IPV6.
     required: true
-  projectid:
+  project_id:
     type: string
     description: An optional project for the ssh key.
     required: true
@@ -59,7 +59,7 @@ parameters:
       - 28
     immutable: true
     default: 27
-  acltype:
+  acl_type:
     type: string
     description: Access control type; supported values are account and domain.
     required: false
