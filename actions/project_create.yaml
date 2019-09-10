@@ -27,3 +27,7 @@ parameters:
     type: string
     description: Display text of the project.
     required: true
+  extra_parameters:
+    type: object
+    description: Extra parameters to the project.
+    required: false
