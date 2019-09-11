@@ -51,13 +51,6 @@ parameters:
     type: string
     description: Subnet mask in bits.
     required: false
-    enum:
-      - 24
-      - 25
-      - 26
-      - 27
-      - 28
-      - 29
     default: 27
   acl_type:
     type: string

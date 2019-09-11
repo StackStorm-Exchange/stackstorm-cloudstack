@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.9
+
+- Remove enum properties for `subnet`
+
 ## 0.5.8
 
 - Remove required from boolean field `is_ipv6`
