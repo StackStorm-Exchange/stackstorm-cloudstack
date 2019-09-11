@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.5.8
+
+- Remove required from boolean field `is_ipv6`
+- Change to string type at `subnet`
+
 ## 0.5.7
 
 - Add default value at project_create `extra_parameters`

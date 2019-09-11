@@ -42,13 +42,13 @@ parameters:
   is_ipv6:
     type: boolean
     description: If true defines de network IP type as IPV6.
-    required: true
+    required: false
   project_id:
     type: string
     description: An optional project for the ssh key.
     required: true
   subnet:
-    type: integer
+    type: string
     description: Subnet mask in bits.
     required: false
     enum:
