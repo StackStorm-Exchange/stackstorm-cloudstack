@@ -1,9 +1,9 @@
 ---
-name: network_restart
+name: network_update
 runner_type: python-script
 description: Updates a network. API command updateNetwork
 enabled: true
-entry_point: network_restart.py
+entry_point: network_update.py
 parameters:
   url:
     type: string

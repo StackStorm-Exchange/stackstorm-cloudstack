@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.10
+
+- Fix network_update name and entry_point
+
 ## 0.5.9
 
 - Remove enum properties for `subnet`
