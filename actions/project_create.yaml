@@ -31,3 +31,4 @@ parameters:
     type: object
     description: Extra parameters to the project.
     required: false
+    default: {}

@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.5.7
+
+- Add default value at project_create `extra_parameters`
+- Remove immutable properties from `acl_type` and `subnet`
+
 ## 0.5.6
 
 - Add extra_parameters at project create action

@@ -57,7 +57,7 @@ parameters:
       - 26
       - 27
       - 28
-    immutable: true
+      - 29
     default: 27
   acl_type:
     type: string
@@ -66,5 +66,4 @@ parameters:
     enum:
       - account
       - domain
-    immutable: true
     default: account
