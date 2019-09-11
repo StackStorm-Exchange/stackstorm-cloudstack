@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.11
+
+- Fix `network_delete_globo` lib action
+
 ## 0.5.10
 
 - Fix network_update name and entry_point
