@@ -46,8 +46,9 @@ parameters:
   hyper_visor:
     type: string
     description: The hypervisor on which to deploy the virtual machine.
-    required: false
+    required: true
     default: XenServer
   userdata:
     type: string
     description: Binary data that can be sent to the virtual machine upon a successful deployment.
+    required: false

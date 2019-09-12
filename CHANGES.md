@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.12
+
+- Fix parameters properties
+
 ## 0.5.11
 
 - Fix `network_delete_globo` lib action

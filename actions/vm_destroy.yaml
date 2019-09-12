@@ -24,7 +24,7 @@ parameters:
     description: The ID of the virtual machine.
     required: true
   expunge:
-    type: string
+    type: boolean
     description: If true is passed, the vm is expunged immediately.
     required: false
     default: false
