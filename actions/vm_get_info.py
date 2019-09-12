@@ -8,7 +8,7 @@ __all__ = [
 
 
 class VMGetInfo(CloudStackAPI):
-    def run(self, url, apikey, secretkey, vm_id):
+    def run(self, url, apikey, secretkey, vm_id, project_id):
         cs = self.get_client(url, apikey, secretkey)
 
-        return cs.listVirtualMachines(id=vm_id)
+        return cs.listVirtualMachines(id=vm_id, projectid=project_id)
