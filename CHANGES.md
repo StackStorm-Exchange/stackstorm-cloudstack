@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.13
+
+- Fix sshkeypair_register name and entry_point
+
 ## 0.5.12
 
 - Fix parameters properties

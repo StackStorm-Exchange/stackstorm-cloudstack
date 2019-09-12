@@ -1,9 +1,9 @@
 ---
-name: sshkeypair_delete
+name: sshkeypair_register
 runner_type: python-script
 description: Register a public key in a keypair under a certain name. API command registerSSHKeyPair
 enabled: true
-entry_point: sshkeypair_delete.py
+entry_point: sshkeypair_register.py
 parameters:
   url:
     type: string
