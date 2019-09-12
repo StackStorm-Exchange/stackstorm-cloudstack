@@ -1,0 +1,25 @@
+---
+name: vm_start
+runner_type: python-script
+description: Starts a virtual machine. API command startVirtualMachine
+enabled: true
+entry_point: vm_start.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  vm_id:
+    type: string
+    description: The ID of the virtual machine.
+    required: true

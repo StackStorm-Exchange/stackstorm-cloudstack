@@ -1,0 +1,16 @@
+---
+ref: cloudstack
+name: CloudStack
+description: CloudStack integration
+keywords:
+    - acs
+    - cloudstack
+    - apache-cloudstack
+    - apache-acs
+    - cloud
+version: 0.5.14
+python_versions:
+  - "2"
+  - "3"
+author: Globo.com
+email: a-team@corp.globo.com

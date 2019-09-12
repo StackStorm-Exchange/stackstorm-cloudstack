@@ -1,0 +1,25 @@
+---
+name: project_delete
+runner_type: python-script
+description: Deletes a project. API command deleteProject
+enabled: true
+entry_point: project_delete.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  project_id:
+    type: string
+    description: ID of the project to be deleted.
+    required: true

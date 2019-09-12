@@ -1,0 +1,30 @@
+---
+name: vm_stop
+runner_type: python-script
+description: Stops a virtual machine. API command stopVirtualMachine
+enabled: true
+entry_point: vm_stop.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  vm_id:
+    type: string
+    description: The ID of the virtual machine.
+    required: true
+  forced:
+    type: boolean
+    description: Force stop the VM (vm is marked as Stopped even when command fails to be send to the backend, otherwise a force poweroff is attempted).
+    required: false
+    default: false

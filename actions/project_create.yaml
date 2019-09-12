@@ -1,0 +1,34 @@
+---
+name: project_create
+runner_type: python-script
+description: Creates a project. API command createProject
+enabled: true
+entry_point: project_create.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  name:
+    type: string
+    description: Name of the project.
+    required: true
+  display_text:
+    type: string
+    description: Display text of the project.
+    required: true
+  extra_parameters:
+    type: object
+    description: Extra parameters to the project.
+    required: false
+    default: {}

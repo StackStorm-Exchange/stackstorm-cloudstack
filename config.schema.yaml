@@ -1,0 +1,5 @@
+---
+url:
+  description: "CloudStack Url"
+  type: string
+  required: true

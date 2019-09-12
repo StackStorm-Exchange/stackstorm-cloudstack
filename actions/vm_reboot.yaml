@@ -1,0 +1,25 @@
+---
+name: vm_reboot
+runner_type: python-script
+description: Reboots a virtual machine. API command rebootVirtualMachine
+enabled: true
+entry_point: vm_reboot.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  vm_id:
+    type: string
+    description: The ID of the virtual machine.
+    required: true
