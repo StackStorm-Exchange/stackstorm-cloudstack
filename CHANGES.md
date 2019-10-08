@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.15
+
+- Add attach and dettach lb member
+
 ## 0.5.14
 
 - Add missing project_id at vm_get_info action

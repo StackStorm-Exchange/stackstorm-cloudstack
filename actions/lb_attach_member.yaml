@@ -1,0 +1,29 @@
+---
+name: lb_attach_member
+runner_type: python-script
+description: Assigns virtual machine or a list of virtual machines to a load balancer rule.
+enabled: true
+entry_point: lb_attach_member.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  lb_id:
+    type: string
+    description: ID of a LoadBalancer to retrieve members.
+    required: true
+  virtualmachineids:
+    type: array
+    description: Array of ID members atach LoadBalancer to retrieve members.
+    required: true
