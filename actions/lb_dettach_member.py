@@ -8,7 +8,7 @@ __all__ = [
 
 
 class LBDettachhMember(CloudStackAPI):
-    def run(self, url, apikey, secretkey, lb_id, virtualmachineids, virtualmachineids):
+    def run(self, url, apikey, secretkey, lb_id, virtualmachineids):
         cs = self.get_client(url, apikey, secretkey)
 
         return cs.removeFromLoadBalancerRule(id=lb_id, virtualmachineids=virtualmachineids)
