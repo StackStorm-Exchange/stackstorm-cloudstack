@@ -23,7 +23,7 @@ parameters:
     type: string
     description: ID of a LoadBalancer to retrieve members.
     required: true
-  virtualmachineids:
+  vm_ids:
     type: array
     description: Array of ID members atach LoadBalancer to retrieve members.
     required: true
