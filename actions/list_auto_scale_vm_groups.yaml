@@ -1,0 +1,25 @@
+---
+name: list_auto_scale_vm_groups
+runner_type: python-script
+description: Lists autoscale vm groups.
+enabled: true
+entry_point: list_auto_scale_vm_groups.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  lb_id:
+    type: string
+    description: ID of a LoadBalancer to retrieve members.
+    required: true
