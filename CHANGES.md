@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.16
+
+- Add feature listAutoScaleVmGroups
+
 ## 0.5.15
 
 - Add attach and dettach lb member
