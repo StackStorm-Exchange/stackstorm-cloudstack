@@ -23,3 +23,7 @@ parameters:
     type: string
     description: ID of a LoadBalancer to retrieve members.
     required: true
+  projectid:
+    type: string
+    description: ID of a project.
+    required: true

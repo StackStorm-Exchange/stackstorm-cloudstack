@@ -8,7 +8,7 @@ __all__ = [
 
 
 class ListAutoScaleVmGroups(CloudStackAPI):
-    def run(self, url, apikey, secretkey, lb_id):
+    def run(self, url, apikey, secretkey, lb_id, projectid):
         cs = self.get_client(url, apikey, secretkey)
 
-        return cs.listAutoScaleVmGroups(lbruleid=lb_id)
+        return cs.listAutoScaleVmGroups(lbruleid=lb_id, projectid=projectid)
