@@ -42,6 +42,11 @@ url: http://localhost:8080/client/api
 #### LoadBalancer
 
 * `lb_list_members` - list members from a LoadBalancer
+* `lb_attach_member` - Assigns virtual machine or a list of virtual machines to a load balancer
+* `lb_dettach_member` - Removes a virtual machine or a list of virtual machines from a load balancer
+
+### AutoScale
+* `listAutoScaleVmGroups` - list listAutoScaleVmGroups
 
 #### SSH KeyPair
 
