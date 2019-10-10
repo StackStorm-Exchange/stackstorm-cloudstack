@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.5.16
+## 0.6.0
 
 - Add feature listAutoScaleVmGroups
 
