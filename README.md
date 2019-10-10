@@ -47,6 +47,8 @@ url: http://localhost:8080/client/api
 
 ### AutoScale
 * `listAutoScaleVmGroups` - list listAutoScaleVmGroups
+* `enableAutoScaleVmGroups` - enable AutoScaleVmGroups
+* `disableAutoScaleVmGroups` - disable AutoScaleVmGroups
 
 #### SSH KeyPair
 

@@ -1,0 +1,25 @@
+---
+name: disable_auto_scale_vm_groups
+runner_type: python-script
+description: Disables an AutoScale Vm Group.
+enabled: true
+entry_point: disable_auto_scale_vm_groups.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  id:
+    type: string
+    description: the ID of the autoscale group.
+    required: true
