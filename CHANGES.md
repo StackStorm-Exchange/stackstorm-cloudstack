@@ -1,5 +1,10 @@
 # Change Log
 
+
+## 0.7.0
+- Add feature enableAutoScaleVmGroups
+- Add feature disableAutoScaleVmGroups
+
 ## 0.6.0
 
 - Add feature listAutoScaleVmGroups
