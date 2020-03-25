@@ -3,7 +3,7 @@ name: lb_globo_create
 runner_type: python-script
 description: Create Globo LoadBalancer
 enabled: true
-entry_point: lb_globo_create
+entry_point: lb_globo_create.py
 parameters:
   url:
     type: string
