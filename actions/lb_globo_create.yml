@@ -9,7 +9,7 @@ parameters:
     type: string
     description: URL to use at ACS request
     required: false
-  apiKey:
+  apikey:
     type: string
     description: API KEY to use at ACS request
     required: true
