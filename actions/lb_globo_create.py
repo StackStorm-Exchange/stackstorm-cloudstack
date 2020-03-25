@@ -25,7 +25,7 @@ class LBGloboCreate(CloudStackAPI):
             networkid=networkid,
             additionalportmap=additionalportmap,
             healthcheckType=healthchecktype,
-            healthchecktype=healthcheckrequest,
+            healthcheckrequest=healthcheckrequest,
             expectedhealthcheck=expectedhealthcheck,
             lbenvironmentid=str(lbenvironmentid)
         )
