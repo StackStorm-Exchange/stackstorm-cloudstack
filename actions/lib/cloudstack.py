@@ -12,7 +12,7 @@ class CloudStackAPI(Action):
     def __init__(self, config):
         super(CloudStackAPI, self).__init__(config=config)
 
-    def get_client(self, url, apikey, secretkey):
+    def get_client(self, url, apikey, secretkey, timeout=10):
         url_temp = self.config.get('url')
 
         if url != "" and url is not None:
@@ -23,5 +23,6 @@ class CloudStackAPI(Action):
                         secret=secretkey,
                         dangerous_no_tls_verify=True,
                         fetch_result=True,
-                        method='POST')
+                        method='POST',
+                        timeout=timeout)
         return cs
