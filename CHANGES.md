@@ -1,5 +1,7 @@
 # Change Log
 
+## 0.8.0
+- Add feature create load balancer globo
 
 ## 0.7.0
 - Add feature enableAutoScaleVmGroups
