@@ -1,0 +1,78 @@
+---
+name: lb_globo_create
+runner_type: python-script
+description: Create Globo LoadBalancer
+enabled: true
+entry_point: lb_globo_create.py
+parameters:
+  url:
+    type: string
+    description: URL to use at ACS request
+    required: false
+  apikey:
+    type: string
+    description: API KEY to use at ACS request
+    required: true
+    secret: true
+  secretkey:
+    type: string
+    description: Secret KEY to use at ACS request
+    required: true
+    secret: true
+  name:
+    type: string
+    description: name of the load balancer
+    required: true
+  algorithm:
+    type: string
+    description: load balancer algorithm (source, roundrobin, leastconn)
+    required: true
+  publicport:
+    type: integer
+    description: the public port from where the network traffic will be load balanced from
+    required: true
+  privateport:
+    type: integer
+    description: the private port of the private IP address/virtual machine where the network traffic will be load balanced to
+    required: true
+  projectid:
+    type: string
+    description: id of the project to which the loadbalancer belongs
+    required: true
+  openfirewall:
+    type: boolean
+    description: id of the project to which the loadbalancer belongs
+    default: false
+    required: false
+  networkid:
+    type: string
+    description: The guest network this rule will be created for. Required when public Ip address is not associated with any Guest network yet (VPC case)
+    required: true
+  additionalportmap:
+    type: string
+    description: "Addional port map (pattern sample: 80:80)"
+    required: false
+  healthchecktype:
+    type: string
+    description: "Heath check protocol (example: HTTP, TCP)"
+    required: false
+    default: HTTP
+  healthcheckrequest:
+    type: string
+    description: "Path health check request (example: /healthcheck.html)"
+    required: false
+    default: "/"
+  expectedhealthcheck:
+    type: string
+    description: "Expected health check (example: 200 ok)"
+    required: false
+    default: "200 OK"
+  lbenvironmentid:
+    type: integer
+    description: "Load balancer environment id"
+    required: true
+  timeoutrequest:
+    type: integer
+    description: Timeout request in seconds
+    required: false
+    default: 35

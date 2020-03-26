@@ -44,6 +44,7 @@ url: http://localhost:8080/client/api
 * `lb_list_members` - list members from a LoadBalancer
 * `lb_attach_member` - Assigns virtual machine or a list of virtual machines to a load balancer
 * `lb_dettach_member` - Removes a virtual machine or a list of virtual machines from a load balancer
+* `lb_globo_create` - Creates a load balancer Globo
 
 ### AutoScale
 * `listAutoScaleVmGroups` - list listAutoScaleVmGroups
